@@ -4,6 +4,7 @@ import MainNav from '@/components/MainNav.vue'
 describe('MainNav', () => {
   it('Displays company name', () => {
     render(MainNav)
-    screen.debug()
+    const companyName = screen.getByText('Umbrella Corp')
+    expect(companyName).toBeInTheDocument()
   })
 })
