@@ -1,10 +1,5 @@
 <template>
   <div class="wrapper">
-    <HelloWorld msg="You did it!" />
-    <HelloWorld msg="Fuck You" />
+    <h1>I'm in App.vue</h1>
   </div>
 </template>
-
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
