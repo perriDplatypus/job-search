@@ -28,3 +28,4 @@ coverage
 *.sw?
 
 /src/playground.js
+/test/playground.test.js
