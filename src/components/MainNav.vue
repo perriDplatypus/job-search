@@ -3,10 +3,10 @@
     <div class="fixed top-0 left-0 h-16 w-full bg-white">
       <div class="mx-auto flex flex-nowrap h-full border-b border-solid border-brand-gray-1 px-8">
         <a :href="url" class="flex h-full items-center text-xl">{{ company }}</a>
-        <nav class="ml-3 h-full">
+        <nav class="ml-12 h-full">
           <ul class="flex h-full list-none">
-            <li v-for="menuItem in menuItems" :key="menuItem" class="h-full">
-              <a href="" class="ml-9 flex h-full items-center py-2.5">{{ menuItem }}</a>
+            <li v-for="menuItem in menuItems" :key="menuItem" class="h-full ml-9 first:ml-0">
+              <a href="" class="flex h-full items-center py-2.5">{{ menuItem }}</a>
             </li>
           </ul>
         </nav>
