@@ -1,5 +1,5 @@
 <template>
-  <button :class="{ primary: primary }">
+  <button :class="buttonClass">
     {{ text }}
   </button>
 </template>
@@ -7,10 +7,21 @@
 <script>
 export default {
   name: 'ActionButton',
-  props: ['text'],
-  data() {
-    return {
-      primary: true
+  props: {
+    text: {
+      type: String,
+      required: true
+    },
+    type: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    buttonClass() {
+      return {
+        [this.type]: true
+      }
     }
   }
 }
@@ -26,5 +37,6 @@ button {
 }
 
 .secondary {
+  @apply border-0 bg-transparent text-brand-blue-1 hover:bg-brand-blue-2 hover:text-white;
 }
 </style>
