@@ -11,7 +11,7 @@
           </ul>
         </nav>
         <div class="ml-auto flex h-full items-center">
-          <a :href="url">
+          <a :href="url" target="_blank">
             <font-awesome-icon :icon="['fas', 'up-right-from-square']" class="mr-6" />
           </a>
           <ProfileImage v-if="isLoggedIn" />
