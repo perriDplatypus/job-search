@@ -11,11 +11,14 @@
           </ul>
         </nav>
         <div class="ml-auto flex h-full items-center">
+          <a :href="url">
+            <font-awesome-icon :icon="['fas', 'up-right-from-square']" class="mr-7" />
+          </a>
           <ProfileImage v-if="isLoggedIn" />
           <ActionButton v-else text="Sign in" type="primary" @click="loginUser" />
         </div>
       </div>
-      <the-subnav />
+      <the-subnav v-if="isLoggedIn" />
     </div>
   </header>
 </template>
