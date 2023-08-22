@@ -10,3 +10,5 @@ This site uses:
 - VueJS
 - Vitest
 - TypeScript
+
+This is a front-end project so backend funtionality does not exist :).
