@@ -3,14 +3,16 @@ import ActionButton from '@/components/ActionButton.vue'
 import { expect } from 'vitest'
 
 describe('ActionButton', () => {
-  it('renders text', () => {
+  const renderActionButton = () => {
     render(ActionButton, {
       props: {
         text: 'Click me',
         type: 'primary'
       }
     })
-
+  }
+  it('renders text', () => {
+    renderActionButton()
     const button = screen.getByRole('button', {
       name: /Click me/i
     })
@@ -18,12 +20,7 @@ describe('ActionButton', () => {
   })
 
   it('applies one of several styles to button', () => {
-    render(ActionButton, {
-      props: {
-        text: 'Click me',
-        type: 'primary'
-      }
-    })
+    renderActionButton()
     const button = screen.getByRole('button', {
       name: /click me/i
     })
