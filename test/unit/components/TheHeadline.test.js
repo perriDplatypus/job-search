@@ -1,6 +1,6 @@
 import { nextTick } from 'vue'
 import { render, screen } from '@testing-library/vue'
-import { describe, expect } from 'vitest'
+import { describe, expect, vi } from 'vitest'
 
 import TheHeadline from '@/components/TheHeadLine.vue'
 
