@@ -7,7 +7,7 @@
     </h1>
     <h2 class="text-3xl font-light">Find your next job at Umbrella Corp</h2>
   </section>
-  <JobSearchForm />
+  <job-search-form />
 </template>
 
 <script>
