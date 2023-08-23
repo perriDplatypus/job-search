@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import { clearInterval } from 'timers'
-
 import nextElementInList from '@/utils/nextElementInList'
 
 export default {
