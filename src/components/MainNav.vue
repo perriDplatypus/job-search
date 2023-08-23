@@ -14,8 +14,8 @@
           <a :href="url" target="_blank">
             <font-awesome-icon :icon="['fas', 'up-right-from-square']" class="mr-6" />
           </a>
-          <ProfileImage v-if="isLoggedIn" />
-          <ActionButton v-else text="Sign in" type="primary" @click="loginUser" />
+          <profile-image v-if="isLoggedIn" />
+          <action-button v-else text="Sign in" type="primary" @click="loginUser" />
         </div>
       </div>
       <the-subnav v-if="isLoggedIn" />
