@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="mb-16">
     <h1 class="mb-14 text-8xl font-bold tracking-tighter">
       <span :class="actionClasses">{{ currentAction }}</span>
       <br />
@@ -7,13 +7,17 @@
     </h1>
     <h2 class="text-3xl font-light">Find your next job at Umbrella Corp</h2>
   </section>
+  <JobSearchForm />
 </template>
 
 <script>
+import JobSearchForm from '@/components/JobSearchForm.vue'
 import nextElementInList from '@/utils/nextElementInList'
-
 export default {
   name: 'TheHeadline',
+  components: {
+    JobSearchForm
+  },
   data() {
     return {
       interval: null,
