@@ -13,19 +13,16 @@
         <div class="col-start-12 col-span-1"></div>
       </div>
     </section>
-    <job-search-form />
   </main>
 </template>
 
 <script>
 import TheHeadline from '@/components/JobSearch/TheHeadLine.vue'
-import JobSearchForm from '@/components/JobSearch/JobSearchForm.vue'
 
 export default {
   name: 'TheHero',
   components: {
-    TheHeadline,
-    JobSearchForm
+    TheHeadline
   }
 }
 </script>
