@@ -6,8 +6,10 @@
         <label class="absolute left-0 -top-10">Role</label>
         <input
           type="text"
+          :value="role"
           placeholder="Software Engineer"
           class="w-full text-lg font-normal focus:outline-none"
+          @input="role = $event.target.value"
         />
       </div>
       <span
@@ -19,8 +21,10 @@
         <label class="absolute left-0 -top-10">Where?</label>
         <input
           type="text"
+          :value="location"
           placeholder="Melbourne"
           class="w-full text-lg font-normal focus:outline-none"
+          @input="location = $event.target.value"
         />
       </div>
     </div>
@@ -34,6 +38,12 @@ export default {
   name: 'JobSearchForm',
   components: {
     ActionButton
+  },
+  data() {
+    return {
+      role: '',
+      location: ''
+    }
   }
 }
 </script>
