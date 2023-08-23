@@ -2,7 +2,7 @@ import { nextTick } from 'vue'
 import { render, screen } from '@testing-library/vue'
 import { afterEach, beforeEach, describe, expect, vi } from 'vitest'
 
-import TheHeadline from '@/components/TheHeadLine.vue'
+import TheHeadline from '@/components/JobSearch/TheHeadLine.vue'
 
 beforeEach(() => {
   vi.useFakeTimers()

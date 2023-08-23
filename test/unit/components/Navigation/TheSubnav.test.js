@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/vue'
 import { describe, expect } from 'vitest'
 
-import TheSubnav from '@/components/TheSubNav.vue'
+import TheSubnav from '@/components/Navigation/TheSubNav.vue'
 
 describe('TheSubnav', () => {
   const renderSubnav = (onJobResultPageCondition) => {

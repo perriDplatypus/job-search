@@ -11,8 +11,9 @@
 </template>
 
 <script>
-import JobSearchForm from '@/components/JobSearchForm.vue'
+import JobSearchForm from '@/components/JobSearch/JobSearchForm.vue'
 import nextElementInList from '@/utils/nextElementInList'
+
 export default {
   name: 'TheHeadline',
   components: {
