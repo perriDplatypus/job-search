@@ -10,15 +10,17 @@
 </template>
 
 <script>
+import { clearInterval } from 'timers'
+
 import nextElementInList from '@/utils/nextElementInList'
 
 export default {
   name: 'TheHeadline',
   data() {
     return {
+      interval: null,
       actions: ['Build', 'Create', 'Design', 'Code'],
-      currentAction: 'Build',
-      interval: null
+      currentAction: 'Build'
     }
   },
   computed: {
@@ -28,7 +30,7 @@ export default {
       }
     }
   },
-  created() {
+  mounted() {
     this.changeTitle()
   },
   beforeUnmount() {

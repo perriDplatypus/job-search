@@ -28,6 +28,18 @@ describe('TheHeadline', () => {
     vi.useRealTimers()
   })
 
+  it('removes interval when component dissapears', () => {
+    vi.useFakeTimers()
+    const clearInterval = vi.fn()
+    vi.stubGlobal('clearInterval()', clearInterval())
+
+    const { unmount } = render(TheHeadline)
+    unmount()
+
+    expect(clearInterval).toHaveBeenCalled()
+    vi.useRealTimers()
+  })
+
   it('swaps action verb after interval', async () => {
     vi.useFakeTimers()
     render(TheHeadline)
